@@ -1,0 +1,37 @@
+.header__navigation{
+
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation, footer__navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.link-item{
+  margin-right: 15px;
+}
+
+.link{
+  text-decoration: none;
+  color:#2F281E;
+}
+
+header {
+  /* shadow */
+  background-color: $color-light;
+  box-shadow:0px 4px 20px rgba(0, 0, 0, 0.05);
+  max-height: 78px;
+  padding: 15px 0 17px;
+
+}
+
+
+

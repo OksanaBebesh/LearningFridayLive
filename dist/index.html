@@ -14,13 +14,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <a href="#"><object data="./asseets/logo/logo.svg" width="191" height="32" ></object></a>            <nav class="header__navigation">
+        <div class="wrapper header__wrapper">
+            <div class="logo">
+                <a href="#"><img src="./asseets/logo/Logo.svg" width="191" height="32" ></a>
+            </div>
+            <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="link-item">Home</li>
-                    <li class="link-item">Services</li>
-                    <li class="link-item">About</li>
-                    <li class="link-item">Product</li>
+                    <li class="link-item"><a class="link" href="">Home</a></li>
+                    <li class="link-item"><a class="link" href="">Services</a></li>
+                    <li class="link-item"><a class="link" href="">About</a></li>
+                    <li class="link-item"><a class="link" href="">Product</a></li>
                 </ul>
             </nav>
             <div class="header__buttons">
@@ -31,7 +34,7 @@
     </header>
     <section class="promo">
         <div class="wrapper">
-            <div class="layout-column-2">
+            <div class="layout-2-column">
                 <div class="promo__content">
                     <h1>The Design Thinking superpowers</h1>
                     <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
@@ -44,7 +47,7 @@
                     </div>
                 </div>
                 <div class="promo__image">
-
+                    <img src="./asseets/promo/Image.png" alt="">
                 </div>
             </div>
         </div>
@@ -107,9 +110,9 @@
     </section>
     <section class="contact-us">
         <div class="wrapper">
-            <div class="layout-2-columns">
+            <h2>Contact Us</h2>
+            <div class="layout-2-column">
                 <div class="contact-us__content">
-                    <h2>Contact Us</h2>
                     <p>Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
                     <p>
                         <span class="ico ico-phone"></span><a href="tel:+375 (22) 345-00-99">+375 (22) 345-00-99</a>
@@ -124,7 +127,7 @@
                             <input type="text" name="name" id="contact-name" placeholder="Your name">
                             <input type="email" name="email" id="contact-mail" placeholder="Your email">
                         </div>
-                        <textarea name="question" cols="30" rows="10" palceholder="What do you want to ask?"></textarea>
+                        <textarea name="question" cols="30" rows="10" placeholder="What do you want to ask?"></textarea>
                         <div class="contact-us__button">
                             <button class="button button_colored">Send</button>
                         </div>
@@ -134,33 +137,37 @@
         </div>
     </section>
     <section class="footer">
-        <div class="layout-3-column">
-        <a href="">Logo</a>
-        <div class="footer-navigation">
-                <div class="footer__column-1">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                        <li>FAQ</li>
-                    </ul>
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                        <li>FAQ</li>
-                    </ul>
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                        <li>FAQ</li>
-                    </ul>
+        <div class="wrapper">
+            <div class="logo"><a href=""><img src="./asseets/logo/Logo.svg" alt=""></a></div>
+            <div class="footer-navigation">
+                <div>
+                        <h3>Quick Links</h3>
+                        <ul >
+                            <li class="link-item"><a class="link" href="">About Us</a></li>
+                            <li class="link-item"><a class="link" href="">Blog</a></li>
+                            <li class="link-item"><a class="link" href="">Contact</a></li>
+                            <li class="link-item"><a class="link" href="">FAQ</a></li>
+                        </ul>
                 </div>
-        </div>
+                <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li class=""><a href="" class="link">About Us</a></li>
+                            <li><a href="" class="link">Blog</a></li>
+                            <li><a href="" class="link">Contact</a></li>
+                            <li><a href="" class="link">FAQ</a></li>
+                        </ul>
+                </div>
+                <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="" class="link">About Us</a></li>
+                            <li><a href="" class="link">Blog</a></li>
+                            <li><a href="" class="link">Contact</a></li>
+                            <li><a href="" class="link">FAQ</a></li>
+                        </ul>
+                </div>
+            </div>
         </div>
     </section>
     <script src="bundle.js"></script>
