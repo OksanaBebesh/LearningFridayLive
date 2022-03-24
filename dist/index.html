@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Friday live coding</title>
     <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
-            <a href="#">Logo</a>
-            <nav class="header__navigation">
+            <a href="#"><object data="./asseets/logo/logo.svg" width="191" height="32" ></object></a>            <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="">Home</li>
-                    <li class="">Services</li>
-                    <li class="">About</li>
-                    <li class="">Product</li>
+                    <li class="link-item">Home</li>
+                    <li class="link-item">Services</li>
+                    <li class="link-item">About</li>
+                    <li class="link-item">Product</li>
                 </ul>
             </nav>
             <div class="header__buttons">
@@ -57,7 +63,7 @@
                 </div>
             </div>
             <div class="tools__button">
-                <button class="button-colored"></button>
+                <button class="button-colored">Sign Up Now</button>
             </div>
         </div>
     </section>
@@ -118,7 +124,7 @@
                             <input type="text" name="name" id="contact-name" placeholder="Your name">
                             <input type="email" name="email" id="contact-mail" placeholder="Your email">
                         </div>
-                        <textarea name="question" cols="30" rows="100" palceholder="What do you want to ask?"></textarea>
+                        <textarea name="question" cols="30" rows="10" palceholder="What do you want to ask?"></textarea>
                         <div class="contact-us__button">
                             <button class="button button_colored">Send</button>
                         </div>
@@ -128,9 +134,9 @@
         </div>
     </section>
     <section class="footer">
+        <div class="layout-3-column">
         <a href="">Logo</a>
-        <nav class="nav__footer">
-            <div class="layout-3-column">
+        <div class="footer-navigation">
                 <div class="footer__column-1">
                     <h3>Quick Links</h3>
                     <ul>
@@ -154,8 +160,8 @@
                         <li>FAQ</li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+        </div>
+        </div>
     </section>
     <script src="bundle.js"></script>
 </body>
