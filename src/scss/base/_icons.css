@@ -1,0 +1,11 @@
+.ico{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ico-play{
+    background-image: url("http://localhost:63342/LearningFridayLive/dist/asseets/icons/1.svg");
+    width:18px;
+    height: 19px;
+    margin-right: 5px;
+}

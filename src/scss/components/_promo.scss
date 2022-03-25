@@ -3,5 +3,21 @@
 }
 
 .promo__content{
-  max-width: 500px;
+  max-width: 550px;
+  padding-right: 65px;
+}
+
+.promo{
+  padding: 30px 0;
+}
+
+.promo__buttons>.button:first-child{
+  margin-right: 25px;
+}
+
+.promo__buttons>.link-button{
+  text-decoration: none;
+  color: $color-brand;
+  display: inline-flex;
+  align-items:center;
 }
