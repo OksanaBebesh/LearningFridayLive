@@ -2,7 +2,7 @@
   border-radius: 19px;
   width:54px;
   height:50px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   &_violet{
     background-color: $color-violet;
@@ -26,5 +26,21 @@
   margin: 70px;
 }
 .tools__wrapper{
- padding-bottom: 170px;
+
+  padding-bottom: 90px;
+  background-image: url("http://localhost:63342/LearningFridayLive/dist/assets/tools/Bg.png");
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.tools__title{
+  max-width: 462px;
+  margin: auto;
+  text-align: center;
+}
+
+.tools{
+
+
 }
