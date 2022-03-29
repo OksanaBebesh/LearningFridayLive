@@ -2,3 +2,47 @@
   background-color: $color-background;
   padding: 70px 0px 75px;
 }
+
+.contact-us__line{
+  margin-bottom: 20px;
+}
+
+.contact-us__content{
+  max-width: 520px;
+}
+
+.contact-us__form{
+  input {
+    padding: 5px 0 5px 15px;
+    height: 45px;
+  }
+  input, textarea {
+    padding: 5px 0 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color-light;
+    color: $color-input;
+
+    font-family: 'Open Sans',Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    &:focus{
+      outline:none;
+      border: 1px solid $color-brand;
+    }
+  }
+  textarea{
+    width: 97%;
+    height: 160px;
+    resize: none;
+  }
+}
+
+.contact-us__button {
+  >*{
+    min-width: 117px;
+  }
+}

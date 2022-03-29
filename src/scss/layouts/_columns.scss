@@ -1,6 +1,5 @@
 .layout-2-column{
-  display:flex;
-  flex-direction: row;
+  @include columns(47%);
 }
 
 .layout-4-column{
