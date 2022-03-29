@@ -1,0 +1,9 @@
+%hamburger-line{
+  display:inline-block;
+  background-color: $hamburger-line;
+  border-radius: 5px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  content: "";
+}

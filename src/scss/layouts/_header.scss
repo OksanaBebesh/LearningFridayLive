@@ -1,11 +1,16 @@
 .header__navigation{
-
+ @include media-tablet {
+   display: none;
+ }
 }
 
 .header__wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    padding-left: 24px;
+  }
 }
 
 .navigation, footer__navigation {
@@ -47,5 +52,10 @@ header {
   margin-right: 14px;
 }
 
+.header__buttons {
+  @include media-mobile {
+    display: none;
+  }
+}
 
 

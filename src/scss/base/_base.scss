@@ -9,11 +9,17 @@ body{
 }
 
 h1{
-  font-family: 'Poppins',Verdana, sans-serif;;
+  font-family: 'Poppins',Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
+  @include media-mobile {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+  }
 }
 
 h2{
@@ -22,6 +28,12 @@ h2{
   font-size: 34px;
   line-height: 46px;
   text-align: center;
+  @include media-mobile {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 h3{
