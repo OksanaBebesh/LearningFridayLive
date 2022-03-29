@@ -1,8 +1,11 @@
 .layout-2-column{
-  @include columns(47%);
+  @include columns(45%);
+}
+
+.layout-3-column{
+  @include columns(25%);
 }
 
 .layout-4-column{
-  display:flex;
-  flex-direction: row;
+  @include columns(21%);
 }
