@@ -6,6 +6,7 @@
   @include media-mobile {
     justify-content: center;
   }
+
 }
 
 .strategy-wrapper{
@@ -30,7 +31,9 @@
   @include media-tablet {
     overflow: hidden;
   }
-
+  &_hidden {
+    display: none;
+  }
 }
 
 .strategy.block-shadowed{
