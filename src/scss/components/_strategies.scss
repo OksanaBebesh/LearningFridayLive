@@ -9,6 +9,9 @@
 }
 
 .strategy-wrapper{
+
+  padding-top: 31px;
+
   >* {
     @include media-tablet {
       flex-basis: 48%;
