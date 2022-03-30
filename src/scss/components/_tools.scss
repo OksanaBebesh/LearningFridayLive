@@ -24,7 +24,61 @@
 
 .tools__wrapper>.layout-4-column{
   margin: 70px;
+  position: relative;
+  @include media-tablet {
+    margin: unset;
+  }
 }
 .tools__wrapper{
- padding-bottom: 170px;
+ //padding-bottom: 170px;
+}
+
+.tool-container{
+  background-position: center bottom;
+  background-size: 100%;
+  padding: 51px 0 90px;
+
+  @include media-tablet {
+    >.tool {
+      flex-basis: 50%;
+    }
+  }
+  @include media-mobile {
+    >.tool {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.tool {
+  @include media-tablet {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tools__button {
+  text-align: center;
+  margin-top: 60px;
+  position:absolute;
+  bottom: 53px;
+  left: 39%;
+
+  @include media-tablet {
+    margin-top: 0;
+  }
+  @include media-mobile {
+    left: 31%;
+  }
+}
+
+.tool__content{
+  flex-grow: 1;
+  @include media-tablet{
+    width: 275px;
+    padding-bottom: 54px;
+  }
 }

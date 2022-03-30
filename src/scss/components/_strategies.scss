@@ -1,0 +1,33 @@
+.strategies {
+  padding: 30px 0;
+  @include media-tablet {
+    justify-content: center;
+  }
+  @include media-mobile {
+    justify-content: center;
+  }
+}
+
+.strategy-wrapper{
+  >* {
+    @include media-tablet {
+      flex-basis: 48%;
+    }
+
+    @include media-mobile {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.strategy {
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  @include media-tablet {
+    overflow: hidden;
+  }
+
+
+
+}
