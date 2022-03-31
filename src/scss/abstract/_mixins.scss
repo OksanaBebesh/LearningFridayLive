@@ -12,6 +12,11 @@
   >* {
     flex-basis: $width;
   }
+  &:after{
+    display: block;
+    width: 30%;
+    content: "";
+  }
 }
 
 @mixin media-laptop {
