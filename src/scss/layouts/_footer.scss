@@ -27,13 +27,14 @@
 }
 
 .footer .wrapper {
+  padding-top: 47px;
   display: flex;
   justify-content: space-between;
   align-items: center;
  @include media-tablet {
    flex-direction: column;
    align-items: center;
-   padding-top: 47px;
+   //padding-top: 47px;
  }
   @include media-mobile {
     align-items: flex-start;
