@@ -1,5 +1,6 @@
 import './../scss/app.scss';
 import { Article } from "./Article";
+import { Modal } from "./Modal";
 
 const dataWithStrategiesArticles = [
     {
@@ -32,7 +33,11 @@ window.onload = function() {
     //Tags
     addTagsClickHandler();
     //Articles rendering
-    renderArticlesDom();
+    if (dataWithStrategiesArticles){
+        renderArticlesDom();
+    }
+    //Generate Base Modal from Modal Class
+    addToolsClickHandler();
 
 }
 
@@ -107,4 +112,21 @@ const generateArticles = (dataWithStrategiesArticles) => {
     })
 
     return articles;
+}
+
+const addToolsClickHandler = () => {
+    document.querySelector('.tools__button .button').addEventListener('click',() => {
+        generateToolsModal();
+    })
+}
+
+const generateToolsModal =  () => {
+    renderModalWindow('Here I am ')
+}
+
+const renderModalWindow = (content) => {
+    let toolsModal = new Modal('tools_modal');
+    toolsModal.buildModal(content)
+    document.body.append(toolsModal.overlay);
+
 }
