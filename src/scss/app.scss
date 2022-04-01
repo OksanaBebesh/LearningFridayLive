@@ -1,20 +1,22 @@
 @import "abstract/constants";
-@import "layouts/wrapper";
 @import "abstract/mixins";
 @import "abstract/placeholders";
 
+@import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/columns";
+@import "layouts/hamburger";
+@import "layouts/logo";
 
 
 @import "base/base";
 @import "base/button";
 @import "base/icons";
 @import "base/tags";
+@import "base/modal";
 
 @import "components/promo";
-
+@import "components/contact-us";
 @import "components/tools";
 @import "components/strategies";
-@import "components/contact-us";

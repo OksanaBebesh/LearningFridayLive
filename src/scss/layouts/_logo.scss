@@ -1,0 +1,7 @@
+.logo img{
+  display: inline-block;
+  vertical-align: text-bottom;
+  @include media-mobile {
+    width: 191px;
+  }
+}
