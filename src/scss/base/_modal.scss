@@ -34,3 +34,19 @@
     pointer-events: none;
   }
 }
+
+.strategy-modal__image{
+  width: 100%;
+}
+
+.strategy-modal-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy-modal-content {
+  padding: 25px 34px 41px 41px;
+ .strategies__tags{
+   margin-top: 12px;
+ }
+}

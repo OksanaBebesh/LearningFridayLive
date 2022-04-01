@@ -1,6 +1,7 @@
 import './../scss/app.scss';
 import { Article } from "./Article";
 import { Modal } from "./Modal";
+import { ModalArticles } from "./ModalArticles";
 
 const dataWithStrategiesArticles = [
     {
@@ -17,7 +18,7 @@ const dataWithStrategiesArticles = [
         urlToImage: './asseets/strategies/2.jpg',
         tags: ['Culture'],
         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
-        date: ''
+        date: '22/11/2020'
     },
     {
         id: 3,
@@ -25,7 +26,7 @@ const dataWithStrategiesArticles = [
         urlToImage: './asseets/strategies/3.jpg',
         tags: ['Culture','Design','Art'],
         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
-        date: ''
+        date: '1/02/2020'
     }
 ]
 
@@ -38,6 +39,9 @@ window.onload = function() {
     }
     //Generate Base Modal from Modal Class
     addToolsClickHandler();
+
+    //Generate Article Modal
+    addStrategiesClickHandler();
 
 }
 
@@ -55,6 +59,16 @@ document.querySelector(".strategies__tags").addEventListener('click', (e) => {
        }
    }
 })
+}
+
+const  addStrategiesClickHandler = () => {
+    document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+
+       let dataId =  e.target.closest('.strategy').getAttribute('data-id');
+       let strategyOfDataId = filterSelectedStrategy(dataId);
+        console.log(strategyOfDataId);
+        renderStrategyModalWindow(strategyOfDataId, 'strategy-modal');
+    })
 }
 
 const removeSelectedTags = () => {
@@ -89,6 +103,10 @@ const filterStrategyBySelectedTag = (selectedTag) => {
     })
 }
 
+const filterSelectedStrategy = (strategyId) => {
+    return  dataWithStrategiesArticles.find( strategy  => strategy.id == strategyId) ;
+}
+
 const renderArticlesDom = () => {
     let strategiesWrapper = getStrategiesWrapper();
     let strategiesTemplate = generateArticles(dataWithStrategiesArticles);
@@ -116,17 +134,17 @@ const generateArticles = (dataWithStrategiesArticles) => {
 
 const addToolsClickHandler = () => {
     document.querySelector('.tools__button .button').addEventListener('click',() => {
-        generateToolsModal();
+        renderModalWindow('Here I am ','tools_modal');
     })
 }
 
-const generateToolsModal =  () => {
-    renderModalWindow('Here I am ')
-}
-
-const renderModalWindow = (content) => {
-    let toolsModal = new Modal('tools_modal');
+const renderModalWindow = (content,...classes) => {
+    let toolsModal = new Modal(...classes);
     toolsModal.buildModal(content)
     document.body.append(toolsModal.overlay);
+}
 
+const renderStrategyModalWindow = (data, ...classes) => {
+    let strategyModal = new ModalArticles(...classes,data);
+    strategyModal.renderArticleContent();
 }
