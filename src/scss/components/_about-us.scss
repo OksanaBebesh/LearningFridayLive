@@ -1,0 +1,36 @@
+.about-us__wrapper {
+  padding-bottom: 100px;
+}
+
+
+  .employee.block-shadowed {
+    position: relative;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-top: 36px;
+    margin-bottom: unset;
+    line-height: 8px;
+    >*p{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+  }
+
+
+.employee.block-shadowed {
+
+  h5{
+    line-height: 8px;
+  }
+}
+
+.employee-image {
+  position: absolute;
+  top: 24px;
+  right: -60px;
+
+}
+

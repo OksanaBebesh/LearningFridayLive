@@ -1,0 +1,14 @@
+.layout-2-column{
+  @include columns(45%);
+}
+
+.layout-3-column{
+  @include columns(25%);
+}
+
+.layout-4-column{
+  @include columns(21%);
+  @include media-tablet {
+    @include columns(45%);
+  }
+}
